@@ -1,0 +1,13 @@
+{
+  "name": "github-actions-tests",
+  "version-string": "0.0.1",
+  "port-version": 1,
+  "homepage": "https://github.com/cenit/github-actions-tests",
+  "description": "Tests for GitHub Actions",
+  "dependencies": [
+    {
+      "name": "cuda",
+      "platform": "!osx"
+    }
+  ]
+}
