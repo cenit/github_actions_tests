@@ -33,7 +33,7 @@ jobs:
         CUDA_PATH: "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2"
         CUDA_PATH_V10_2: "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2"
         CUDA_TOOLKIT_ROOT_DIR: "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2"
-        CUDACXX: "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2\\bin\\nvcc.exe"
+        CUDACXX: '"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/nvcc.exe"'
       uses: lukka/run-vcpkg@v6
       with:
         setupOnly: true
@@ -48,7 +48,7 @@ jobs:
         CUDA_PATH: "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2"
         CUDA_PATH_V10_2: "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2"
         CUDA_TOOLKIT_ROOT_DIR: "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2"
-        CUDACXX: "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2\\bin\\nvcc.exe"
+        CUDACXX: '"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/nvcc.exe"'
       uses: lukka/run-cmake@v3
       with:
         cmakeListsOrSettingsJson: CMakeListsTxtAdvanced
@@ -89,7 +89,7 @@ jobs:
         CUDA_PATH: "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2"
         CUDA_PATH_V10_2: "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2"
         CUDA_TOOLKIT_ROOT_DIR: "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2"
-        CUDACXX: "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2\\bin\\nvcc.exe"
+        CUDACXX: '"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/nvcc.exe"'
       uses: lukka/run-vcpkg@v6
       with:
         setupOnly: true
@@ -104,7 +104,7 @@ jobs:
         CUDA_PATH: "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2"
         CUDA_PATH_V10_2: "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2"
         CUDA_TOOLKIT_ROOT_DIR: "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2"
-        CUDACXX: "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2\\bin\\nvcc.exe"
+        CUDACXX: '"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/nvcc.exe"'
       uses: lukka/run-cmake@v3
       with:
         cmakeListsOrSettingsJson: CMakeListsTxtAdvanced
