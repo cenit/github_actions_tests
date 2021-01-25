@@ -31,4 +31,4 @@ jobs:
         useVcpkgToolchainFile: true
         buildDirectory: '${{ runner.workspace }}/buildDirectory'
         cmakeBuildType: 'Release'
-        cmakeAppendedArgs: "-DBUILD_SHARED_LIBS=OFF -DCMAKE_BUILD_TYPE=Release -DENABLE_CUDA=OFF"
+        cmakeAppendedArgs: "-DCMAKE_BUILD_TYPE=Release -DENABLE_CUDA=OFF"
