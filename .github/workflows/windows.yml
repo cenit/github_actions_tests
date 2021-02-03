@@ -31,7 +31,7 @@ jobs:
     - name: Restore from cache and run vcpkg
       env:
         CUDA_PATH: "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2"
-        CUDACXX: "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/nvcc.exe"
+        CUDACXX: "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2\\bin"
       uses: lukka/run-vcpkg@v6
       with:
         setupOnly: true
@@ -44,7 +44,7 @@ jobs:
     - name: 'Build with CMake and Ninja'
       env:
         CUDA_PATH: "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2"
-        CUDACXX: "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/nvcc.exe"
+        CUDACXX: "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2\\bin"
       uses: lukka/run-cmake@v3
       with:
         cmakeListsOrSettingsJson: CMakeListsTxtAdvanced
@@ -83,7 +83,7 @@ jobs:
     - name: Restore from cache and run vcpkg
       env:
         CUDA_PATH: "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2"
-        CUDACXX: "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/nvcc.exe"
+        CUDACXX: "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2\\bin"
       uses: lukka/run-vcpkg@v6
       with:
         setupOnly: true
@@ -96,14 +96,14 @@ jobs:
     - name: 'Build with CMake and Ninja'
       env:
         CUDA_PATH: "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2"
-        CUDACXX: "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/nvcc.exe"
+        CUDACXX: "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2\\bin"
       uses: lukka/run-cmake@v3
       with:
         cmakeListsOrSettingsJson: CMakeListsTxtAdvanced
         cmakeListsTxtPath: '${{ github.workspace }}/CMakeLists.txt'
         useVcpkgToolchainFile: true
         buildDirectory: '${{ runner.workspace }}/buildDirectory'
-        cmakeAppendedArgs: "-GNinja -DCMAKE_BUILD_TYPE=Release -DCMAKE_CUDA_COMPILER='C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/nvcc.exe'"
+        cmakeAppendedArgs: "-GNinja -DCMAKE_BUILD_TYPE=Release -DCMAKE_CUDA_COMPILER=C:/Program\ Files/NVIDIA\ GPU\ Computing\ Toolkit/CUDA/v10.2/bin/nvcc.exe"
         cmakeBuildType: 'Release'
 
 
